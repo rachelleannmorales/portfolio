@@ -13,8 +13,9 @@ import TypeScript from '../assets/typescript.svg';
 import Jest from '../assets/jest.png';
 import Mongodb from '../assets/mongodb.png';
 import Postgresql from '../assets/postgresql.png';
+import { SkillsItem } from "../components/types/Skills";
 
-export const skillsList = [
+export const skillsList: SkillsItem[] = [
     {
         icon: faPhp,
         title: 'PHP'

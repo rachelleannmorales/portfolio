@@ -1,6 +1,7 @@
 import React from "react";
+import { EmploymentItem } from "../components/types/Employment";
 
-export const employmentList = [{
+export const employmentList: EmploymentItem[] = [{
     title: 'Software Engineer',
     company: 'Track24',
     location: 'Track24, Dubai, UAE',

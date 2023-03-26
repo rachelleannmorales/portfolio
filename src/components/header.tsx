@@ -5,7 +5,7 @@ import {Avatar, Button, Col, Row} from "antd";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
-const Header: FC<any> = () => {
+const Header: FC<{}> = () => {
     return (
         <Row>
             <Col>

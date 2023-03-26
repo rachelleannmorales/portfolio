@@ -2,8 +2,9 @@ import React, {FC} from "react";
 import {Col, Divider, Row, List, Image } from "antd";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {skillsList} from "../constants/skills";
+import { SkillsItem, SkillsProps } from "./types/Skills";
 
-const Skills: FC<any> = ({isMobile}) => {
+const Skills: FC<SkillsProps> = ({isMobile}) => {
     return (
         <Row justify={'center'} id="skills" className='bg-gray-900 pb-10'>
             <Col>
@@ -15,7 +16,7 @@ const Skills: FC<any> = ({isMobile}) => {
                         <List
                             grid={{ gutter: 16, column: isMobile ? 4 : 5 }}
                             dataSource={skillsList}
-                            renderItem={(item) => (
+                            renderItem={(item: SkillsItem) => (
                                 <List.Item className={'text-center'}>
                                     {(item.icon) && (
                                         <>

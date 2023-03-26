@@ -2,8 +2,9 @@ import React, {FC} from "react";
 import {Tabs, Col, Divider, Row} from "antd";
 import {employmentList} from "../constants/employmentHistory";
 import '../styles/antd/tabs.css';
+import { EmploymentItem, EmploymentProps } from "./types/Employment";
 
-const Employment: FC<any> = ({isMobile}) => {
+const Employment: FC<EmploymentProps> = ({isMobile}) => {
     return (
         <Row justify="center" id="employment" className='bg-gray-800 pb-10'>
             <Col>
@@ -15,7 +16,7 @@ const Employment: FC<any> = ({isMobile}) => {
                         <Tabs
                             tabPosition={isMobile ? 'top' : 'right'}
                             style={{color: 'white'}}
-                            items={employmentList.map((employment: any) => {
+                            items={employmentList.map((employment: EmploymentItem) => {
                                 return {
                                     label: employment.company,
                                     key: employment.company,
